@@ -1,8 +1,8 @@
 /**
 *	@file		merge_sort.c
 *	@brief		マージソート
-*	@author		新渡戸広明
-*	@date		2022/04/17
+*	@author		@omu58n
+*	@date		2018/10/22
 *	@details	分割統治法に基づくアルゴリズム
 *				https://qiita.com/omu58n/items/2aa3c751cfb10cdbbb43
 */

@@ -1,8 +1,8 @@
 /**
 *	@file		heap_sort.c
 *	@brief		ヒープソート
-*	@author		新渡戸広明
-*	@date		2022/04/17
+*	@author		@omu58n
+*	@date		2018/10/14
 *	@details	https://qiita.com/omu58n/items/5c7cc358b1463c0a4710
 */
 
