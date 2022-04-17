@@ -16,7 +16,7 @@ void swap(int *x, int *y);
 
 int main(void)
 {	
-	int data[] = { 3, 1, 6, 7, 4, 2 };
+	int data[] = { 0, 2, 1, 8, 5, 4, 7, 9, 10, 6, 3 };
 	
 	print_array(data, NUM(data));
 	
