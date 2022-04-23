@@ -2,24 +2,32 @@
 *	@file		stalin_sort.c
 *	@brief		スターリンソート
 *	@author		Hiroaki Nitobe／新渡戸　広明
-*	@date		2022/04/19
-*	@details	
+*	@date		2022/04/23
+*	@details	条件に合わない数値を粛清します。
 */
 
 #include	<stdio.h>
 
+#define NUM(a) (sizeof(a)/sizeof(a[0]))
+
 void print_array(int *pa, int n);
-void shell_sort (int array[], int array_size);
-void swap(int *x, int *y);
+int stalin_sort(int *a, int n);
 
 int main(void)
 {	
+	int data[] = { 0, 2, 1, 8, 5, 4, 7, 9, 10, 6, 3 };
+//	int data[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+//	int data[] = { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+//	int data[] = { 0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9 };
+//	int data[] = { 1, 2, 1, 1, 4, 3, 9 };
 	
-	print_array(data, NUM(data));
+	int n = NUM(data);
+		
+	print_array(data, n);
 	
-	stalin_sort(data, NUM(data));
+	n = stalin_sort(data, n);
 	
-	print_array(data,  NUM(data));
+	print_array(data, n);
 	
 	return 0;
 }
@@ -35,16 +43,18 @@ void print_array(int *pa, int n)
 }
 
 /* スターリンソート */
-void stalin_sort (struct *data)
+int stalin_sort(int *a, int n)
 {
-}
-
-void swap(int *x, int *y)
-{
-	if (x != y) {
-		*x ^= *y;
-		*y ^= *x;
-		*x ^= *y;
+	int	i, t, m = 1;
+	
+	t = *a;
+	
+	for (i = 1; i < n; i++) {
+		if (t < *(a + i)) {
+			t = *(a + m) = *(a + i);
+			m++;
+		}
 	}
-}
 
+	return m;
+}
