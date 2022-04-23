@@ -3,6 +3,7 @@ algorithm
 
 # お品書き
 1. 総合演習別解
+    1. FizzBuzz ・・・・・・・・・・・・・・[Fizzbuzz-in-C-language](https://github.com/h-nitobe/Fizzbuzz-in-C-language/blob/main/README.md)
     1. 大文字小文字変換・・・・・・・・・・・[ex3_003.c](ex3_003.c)
     1. フィボナッチ数列・・・・・・・・・・・[ex3_005.c](ex3_005.c)
     1. 完全数と友愛数　・・・・・・・・・・・[ex3_007.c](ex3_007.c)
