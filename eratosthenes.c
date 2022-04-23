@@ -2,7 +2,7 @@
 *	@file		eratosthenes.c
 *	@brief		sieve of Eratosthenes
 *	@author		Hiroaki Nitobe / V“nŒËL–¾
-*	@date		2018/10/22
+*	@date		2022/04/23
 *	@details	ƒGƒ‰ƒgƒXƒeƒlƒX‚Ìâ¿
 *				
 */
@@ -50,15 +50,13 @@ int isPrime(unsigned int n)
 
     unsigned int i;
 
-    if (n < 2) {
-        /* 2–¢–‚Ìê‡‚Í‘f”‚Å‚È‚¢ */
+    if (n < 2) {				/* 2–¢–‚Ìê‡‚Í‘f”‚Å‚È‚¢ */
+        
         return 0;
     }
 
-    /* n‚ª2?n-1‚ÅŠ„‚èØ‚ê‚é‚©‚Ç‚¤‚©‚ğŠm”F */
-    for (i = 2; i < n; i++) {
-        if (n % i == 0) {
-            /* 2?n-1‚ÅŠ„‚èØ‚ê‚éê‡‚Ín‚Í‘f”‚Å‚È‚¢ */
+    for (i = 2; i < n; i++) { 	/* n‚ª2?n-1‚ÅŠ„‚èØ‚ê‚é‚©‚Ç‚¤‚©‚ğŠm”F */
+        if (n % i == 0) {		/* 2?n-1‚ÅŠ„‚èØ‚ê‚éê‡‚Ín‚Í‘f”‚Å‚È‚¢ */
             return 0;
         }
     }
