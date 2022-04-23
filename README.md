@@ -17,4 +17,5 @@ algorithm
     1. マージソート　・・・・・・・・・・・・[marge_sort.c](marge_sort.c)
     1. シェルソート　・・・・・・・・・・・・[shell_sort.c](shell_sort.c)
     1. スリープソート（ネタです）・・・・・・[sleep_sort.c](sleep_sort.c)
+    1. スターリンソート（ネタです）・・・・・[stalin_sort.c](stalin_sort.c)
     1. 疑わしいソート　・・・・・・・・・・・[i_cant_believe_it_can.c](i_cant_believe_it_can.c)
