@@ -4,6 +4,8 @@
 *	@author		Hiroaki Nitobe／新渡戸　広明
 *	@date		2022/04/23
 *	@details	条件に合わない数値を粛清します。
+*				噂のスターリンソートをPythonで実装してみた @sakairi
+*				https://qiita.com/sakairi/items/16838883d667fe117ab5
 */
 
 #include	<stdio.h>
