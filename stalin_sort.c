@@ -59,3 +59,4 @@ int stalin_sort(int *a, int n)
 	}
 
 	return m;
+}
