@@ -29,4 +29,4 @@ algorithm
     1. 分布数えソート　・・・・・・・・・・・[dist_sort.c](dist_sort.c)
     1. スリープソート（ネタです）・・・・・・[sleep_sort.c](sleep_sort.c)
     1. スターリンソート（ネタです）・・・・・[stalin_sort.c](stalin_sort.c)
-    1. 疑わしいソート　・・・・・・・・・・・[https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md](https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md)
+    1. 疑わしいソート　・・・・・・・・・・・[I-cant-t-believe-can-sort](https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md)
