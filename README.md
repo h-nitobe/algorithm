@@ -3,6 +3,13 @@ algorithm
 
 # お品書き
 1. 総合演習別解
+    1. 総合演習１別解・・・・・・・・・・・・[ex01.c](ex01.c)
+    1. 総合演習２別解・・・・・・・・・・・・[ex02.c](ex02.c)
+    1. getFunc.h 別解・・・・・・・・・・・・[getFunc.h](getFunc.h)
+    1. getFunc.c 別解・・・・・・・・・・・・[getFunc.c](getFunc.c)
+    1. examineArray.h 別解 ・・・・・・・・・[examineArray.h](examineArray.h)
+    1. examineArray.c 別解 ・・・・・・・・・[examineArray.c](examineArray.c)
+1. 追加総合演習別解
     1. FizzBuzz ・・・・・・・・・・・・・・[Fizzbuzz-in-C-language](https://github.com/h-nitobe/Fizzbuzz-in-C-language/blob/main/README.md)
     1. 大文字小文字変換・・・・・・・・・・・[ex3_003.c](ex3_003.c)
     1. フィボナッチ数列・・・・・・・・・・・[ex3_005.c](ex3_005.c)
@@ -22,4 +29,4 @@ algorithm
     1. 分布数えソート　・・・・・・・・・・・[dist_sort.c](dist_sort.c)
     1. スリープソート（ネタです）・・・・・・[sleep_sort.c](sleep_sort.c)
     1. スターリンソート（ネタです）・・・・・[stalin_sort.c](stalin_sort.c)
-    1. 疑わしいソート　・・・・・・・・・・・[i_cant_believe_it_can.c](i_cant_believe_it_can.c)
+    1. 疑わしいソート　・・・・・・・・・・・[https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md](https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md)
