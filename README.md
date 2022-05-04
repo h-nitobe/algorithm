@@ -2,14 +2,7 @@
 algorithm
 
 # お品書き
-1. 総合演習別解
-    1. 総合演習１別解・・・・・・・・・・・・[ex01.c](ex01.c)
-    1. 総合演習２別解・・・・・・・・・・・・[ex02.c](ex02.c)
-    1. getFunc.h 別解・・・・・・・・・・・・[getFunc.h](getFunc.h)
-    1. getFunc.c 別解・・・・・・・・・・・・[getFunc.c](getFunc.c)
-    1. examineArray.h 別解 ・・・・・・・・・[examineArray.h](examineArray.h)
-    1. examineArray.c 別解 ・・・・・・・・・[examineArray.c](examineArray.c)
-1. 追加総合演習別解
+1. 「C基」総合演習別解
     1. FizzBuzz ・・・・・・・・・・・・・・[Fizzbuzz-in-C-language](https://github.com/h-nitobe/Fizzbuzz-in-C-language/blob/main/README.md)
     1. 大文字小文字変換・・・・・・・・・・・[ex3_003.c](ex3_003.c)
     1. フィボナッチ数列・・・・・・・・・・・[ex3_005.c](ex3_005.c)
@@ -18,6 +11,13 @@ algorithm
     1. 素数（シンプル版）　・・・・・・・・・[primes.c](primes.c)
     1. 素数（エラトステネスの篩）　・・・・・[eratosthenes.c](eratosthenes.c)
 
+1. 「Cプロ」総合演習別解
+    1. 総合演習１別解・・・・・・・・・・・・[ex01.c](ex01.c)
+    1. 総合演習２別解・・・・・・・・・・・・[ex02.c](ex02.c)
+    1. getFunc.h 別解・・・・・・・・・・・・[getFunc.h](getFunc.h)
+    1. getFunc.c 別解・・・・・・・・・・・・[getFunc.c](getFunc.c)
+    1. examineArray.h 別解 ・・・・・・・・・[examineArray.h](examineArray.h)
+    1. examineArray.c 別解 ・・・・・・・・・[examineArray.c](examineArray.c)
 1. いろいろなソート
     1. バブルソート・・・・・・・・・・・・・[bubble_sort.c](bubble_sort.c)
     1. 選択ソート　・・・・・・・・・・・・・[selection_sort.c](selection_sort.c)
