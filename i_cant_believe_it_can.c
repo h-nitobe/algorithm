@@ -1,9 +1,11 @@
 /**
 *	@file		i_cant_believe_it_can.c
-*	@brief		I cant't believe can sort. 
+*	@brief		I can't believe can sort. 
 *	@author		新渡戸広明
 *	@date		2022/04/17
-*	@details	ソートできるなんて信じられない
+*	@details	I can't believe can sort. 
+*				ソートできるなんて信じられない
+*				Is this the simplest (and most surprising) sorting algorithm ever?
 *				これは、これまでで最もシンプルな（そして最も驚くべき）ソートアルゴリズムなのだろうか？
 *				https://arxiv.org/abs/2110.01111
 *				https://siv3d.jp/web/sample/itcansort/itcansort.html
