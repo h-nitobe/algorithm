@@ -29,7 +29,7 @@ algorithm
     1. 交換ソート（バブルソート）・・・・・・[bubble_sort.c](bubble_sort.c)
     1. クイックソート　・・・・・・・・・・・[quick_sort.c](quick_sort.c)
     1. ヒープソート　・・・・・・・・・・・・[heap_sort.c](heap_sort.c)
-    1. マージソート　・・・・・・・・・・・・[marge_sort.c](marge_sort.c)
+    1. マージソート　・・・・・・・・・・・・[merge_sort.c](merge_sort.c)
     1. シェルソート　・・・・・・・・・・・・[shell_sort.c](shell_sort.c)
     1. 分布数えソート　・・・・・・・・・・・[dist_sort.c](dist_sort.c)
     1. スリープソート（ネタです）・・・・・・[sleep_sort.c](sleep_sort.c)
