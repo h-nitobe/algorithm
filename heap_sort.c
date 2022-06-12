@@ -4,6 +4,8 @@
 *	@author		@omu58n
 *	@date		2018/10/14
 *	@details	https://qiita.com/omu58n/items/5c7cc358b1463c0a4710
+*				何処かにバグがあります。探してください。
+*				There is a bug somewhere. please look for it.
 */
 
 #include	<stdio.h>
