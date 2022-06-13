@@ -8,16 +8,13 @@
 */
 
 #include	<stdio.h>
-#include	<stdlib.h>
 #include	<time.h>
+#include	"my_lib.h"
 
 #define	NUMBER_OF_DATA		65536
 #define NUM(a) (sizeof(a)/sizeof(a[0]))
 
-void create_data(unsigned short *pa, int n);
-void check_the_order(unsigned short *pa, int n);
 void merge_sort (unsigned short array[], int left, int right);
-void swap(unsigned short *x, unsigned short *y);
 
 static unsigned short data[NUMBER_OF_DATA];
 
@@ -29,31 +26,10 @@ int main(void)
 	merge_sort(data, 0, NUM(data) - 1);
 	printf("%d\n", clock());	
 	
+	save_array("merge_sort.txt", data, NUM(data));
 	check_the_order(data, NUM(data));
 	
 	return 0;
-}
-
-void create_data(unsigned short *pa, int n)
-{
-	int		i;
-	
-	printf("Create data: ");
-	for (i = 0; i < n; i++) {
-		*(pa + i) = (unsigned short)rand();
-	}
-	printf("%d\n", i);
-}
-
-void check_the_order(unsigned short *pa, int n)
-{
-	int		i;
-	
-	printf("Check the order: ");
-	for (i = 1; i < n; i++) {
-		if (*(pa + i) < *(pa + i - 1)) break;
-	}
-	printf(i == n ? "OK\n" : "NG\n");
 }
 
 /* マージソート */
@@ -84,13 +60,3 @@ void merge_sort (unsigned short array[], int left, int right)
 		}
 	}
 }
-
-void swap(unsigned short *x, unsigned short *y)
-{
-	if (x != y) {
-		*x ^= *y;
-		*y ^= *x;
-		*x ^= *y;
-	}
-}
-

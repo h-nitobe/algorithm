@@ -7,53 +7,46 @@
 */
 
 #include	<stdio.h>
+#include	<time.h>
+#include	"my_lib.h"
 
-#define	MAX		100
-#define	MIN		0
+#define	NUMBER_OF_DATA		65536
 #define NUM(a) (sizeof(a)/sizeof(a[0]))
 
-void print_array(int *pa, int n);
-void dist_sort(int *a, int *b, int n);
+void dist_sort(unsigned short *a, unsigned short *b, int n);
+
+static unsigned short data[NUMBER_OF_DATA];
+static unsigned short out[NUMBER_OF_DATA];
 
 int main(void)
 {	
-	int			in[] = { 0, 2, 1, 8, 5, 4, 7, 9, 10, 6, 3 };
-	int			out[NUM(in)];
-	int			n = NUM(in);
+	create_data(data, NUM(data));
 
-	print_array(in, n);
+	dist_sort(data, out, NUM(data));
 	
-	dist_sort(in, out, n);
-	
-	print_array(out, n);
+	save_array("dist_sort.txt", out, NUM(out));
+	check_the_order(out,  NUM(out));
 	
 	return 0;
 }
 
-void print_array(int *pa, int n)
-{
-	int		i;
-	
-	for (i = 0; i < n; i++) {
-		printf ("%d ", *(pa + i));
-	}
-	puts("");
-}
-
 /* 分布数えソート */
-void dist_sort(int *a, int *b, int n)
+void dist_sort(unsigned short *a, unsigned short *b, int n)
 {
-	int		i, x;
-	static int cnt[MAX - MIN + 1] = { 0 };
+	int				i;
+	unsigned short	x;
+	static int 		cnt[NUMBER_OF_DATA] = { 0 };
 	
+	printf("Dist sort: ");	
 	for (i = 0; i < n; i++) {
-		cnt[a[i] - MIN]++;
+		cnt[a[i]]++;
 	}
-	for (i = 1; i <= MAX - MIN; i++) {
+	for (i = 1; i <= NUMBER_OF_DATA; i++) {
 		cnt[i] += cnt[i - 1];
 	}
 	for (i = n - 1; i >= 0; --i) {
-		x = a[i] - MIN;
+		x = a[i];
 		b[--cnt[x]] = x;
 	}
+	printf("%d\n", clock());
 }
