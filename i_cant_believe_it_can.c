@@ -12,40 +12,35 @@
 */
 
 #include	<stdio.h>
+#include	<time.h>
+#include	"my_lib.h"
 
+#define	NUMBER_OF_DATA		65536
 #define NUM(a) (sizeof(a)/sizeof(a[0]))
 
-void print_array(int *pa, int n);
-void i_cant_believe_it_can(int *pa, int n);
-void swap(int *x, int *y);
+void i_cant_believe_it_can(unsigned short *pa, int n);
+
+static unsigned short data[NUMBER_OF_DATA];
 
 int main(void)
-{	
-	int data[] = { 0, 2, 1, 8, 5, 4, 7, 9, 10, 6, 3 };
-	
-	print_array(data, NUM(data));
+{		
+	create_data(data, NUM(data));
 	
 	i_cant_believe_it_can(data, NUM(data));
 	
-	print_array(data,  NUM(data));
+	save_array("i_cant_believe_it_can.txt", data, NUM(data));
+	check_the_order(data, NUM(data));
 	
 	return 0;
 }
 
-void print_array(int *pa, int n)
+void i_cant_believe_it_can(unsigned short *pa, int n)
 {
-	int		i;
+	int			i, j;
+	clock_t		start;
 	
-	for (i = 0; i < n; i++) {
-		printf ("%d ", *(pa + i));
-	}
-	puts("");
-}
-
-void i_cant_believe_it_can(int *pa, int n)
-{
-	int		i, j;
-	
+	printf("Shell sort: ");
+	start = clock();
 	for (i = 0; i < n; i++) {
 		for (j = 0; j < i; j++) {
 			if (*(pa + i) < *(pa + j)) {
@@ -53,13 +48,7 @@ void i_cant_believe_it_can(int *pa, int n)
 			}
 		}
 	}
+	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 }
 
-void swap(int *x, int *y)
-{
-	if (x != y) {
-		*x ^= *y;
-		*y ^= *x;
-		*x ^= *y;
-	}
-}
+//cl /Wall  i_cant_believe_it_can.c my_lib.c

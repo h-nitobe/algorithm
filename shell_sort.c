@@ -21,8 +21,7 @@ static unsigned short data[NUMBER_OF_DATA];
 
 int main(void)
 {	
-	create_data(data, NUM(data));
-	
+c	
 	shell_sort(data, NUM(data));
 	
 	save_array("shell_sort.txt", data, NUM(data));
