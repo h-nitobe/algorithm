@@ -31,9 +31,11 @@ int main(void)
 
 void bubble_sort(unsigned short *pa, int n)
 {
-	int		i, j;
+	int			i, j;
+	clock_t		start;
 	
-	printf("Bubble sort: ");	
+	printf("Bubble sort: ");
+	start = clock();
 	for (i = 0; i < n - 1; i++) {
 		for (j = n - 1; j >= i + 1; --j) {
 			if (*(pa + j) < *(pa + j - 1)) {
@@ -41,5 +43,7 @@ void bubble_sort(unsigned short *pa, int n)
 			}
 		}
 	}
-	printf("%d\n", clock());
+	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 }
+
+//cl /Wall bubble_sort.c my_lib.c
