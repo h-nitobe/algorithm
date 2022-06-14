@@ -20,11 +20,14 @@ static unsigned short data[NUMBER_OF_DATA];
 
 int main(void)
 {	
+	clock_t	start;
+	
 	create_data(data, NUM(data));
 
 	printf("Merge sort: ");	
+	start = clock();
 	merge_sort(data, 0, NUM(data) - 1);
-	printf("%d\n", clock());	
+	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);	
 	
 	save_array("merge_sort.txt", data, NUM(data));
 	check_the_order(data, NUM(data));
@@ -60,3 +63,5 @@ void merge_sort (unsigned short array[], int left, int right)
 		}
 	}
 }
+
+//cl /Wall merge_sort.c my_lib.c
