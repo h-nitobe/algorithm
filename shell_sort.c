@@ -35,9 +35,11 @@ int main(void)
 /* シェルソート */
 void shell_sort (unsigned short array[], int array_size)
 {
-  int i, j, h;
+  int			i, j, h;
+  clock_t		start;
 
   printf("Shell sort: ");
+  start = clock();
   for (h = 1; h <= array_size/9; h = 3*h + 1);   // 間隔hを決める
   for ( ; h > 0; h /= 3) {   // hを狭めていく
     /* 以下、挿入ソートとほぼ同じ */
@@ -49,6 +51,8 @@ void shell_sort (unsigned short array[], int array_size)
       }
     }
   }
-  printf("%d\n", clock());
+  printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 
 }
+
+//cl /Wall shell_sort.c my_lib.c
