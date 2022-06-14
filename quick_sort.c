@@ -18,12 +18,15 @@ void quick_sort(unsigned short *pa, int i, int j);
 static unsigned short data[NUMBER_OF_DATA];
 
 int main(void)
-{		
+{
+	clock_t		start;
+	
 	create_data(data, NUM(data));
 	
-	printf("Selection sort: ");	
+	printf("Selection sort: ");
+	start = clock();
 	quick_sort(data, 0, NUM(data) - 1);
-	printf("%d\n", clock());
+	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 	
 	save_array("quick_sort.txt", data, NUM(data));
 	check_the_order(data,  NUM(data));
@@ -54,3 +57,6 @@ void quick_sort(unsigned short *pa, int left, int right)
 	quick_sort(pa, left, i - 1);
 	quick_sort(pa, j + 1, right);
 }
+
+
+//cl /Wall quick_sort.c my_lib.c

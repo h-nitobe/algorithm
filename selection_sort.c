@@ -31,9 +31,11 @@ int main(void)
 
 void selection_sort(unsigned short *pa, int n)
 {
-	int		i, j, m;
+	int			i, j, m;
+	clock_t		start;
 	
-	printf("Selection sort: ");	
+	printf("Selection sort: ");
+	start = clock();
 	for (i = 0; i < n - 1; i++) {
 		m = i;
 		for (j = i + 1; j < n; j++) {
@@ -45,5 +47,7 @@ void selection_sort(unsigned short *pa, int n)
 			swap(pa + m, pa + i);
 		}
 	}
-	printf("%d\n", clock());
+		printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 }
+
+//cl /Wall selection_sort.c my_lib.c
