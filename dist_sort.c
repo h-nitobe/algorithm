@@ -30,13 +30,16 @@ int main(void)
 	return 0;
 }
 
+static int 		cnt[NUMBER_OF_DATA] = { 0 };
+
 /* 分布数えソート */
 void dist_sort(unsigned short *a, unsigned short *b, int n)
 {
 	int				i;
 	unsigned short	x;
-	static int 		cnt[NUMBER_OF_DATA] = { 0 };
+	clock_t			start;
 	
+	start = clock();
 	printf("Dist sort: ");	
 	for (i = 0; i < n; i++) {
 		cnt[a[i]]++;
@@ -48,5 +51,7 @@ void dist_sort(unsigned short *a, unsigned short *b, int n)
 		x = a[i];
 		b[--cnt[x]] = x;
 	}
-	printf("%d\n", clock());
+	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 }
+
+//cl /Wall dist_sort.c my_lib.c
