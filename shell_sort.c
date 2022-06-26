@@ -20,8 +20,9 @@ void shell_sort (unsigned short array[], int array_size);
 static unsigned short data[NUMBER_OF_DATA];
 
 int main(void)
-{	
-c	
+{
+	create_data(data, NUM(data));
+	
 	shell_sort(data, NUM(data));
 	
 	save_array("shell_sort.txt", data, NUM(data));
