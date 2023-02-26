@@ -8,16 +8,16 @@
 
 #include	<stdio.h>
 #include	<stdlib.h>	// for qsort()
-#include	<stdint.h>
 #include	<time.h>
 #include	"my_lib.h"
 
 #define	NUMBER_OF_DATA		65536
 #define NUM(a) (sizeof(a)/sizeof(a[0]))
 
-void test_qsort(unsigned short *pa, int i);
 
-int cmpNum(const void *a, const void *b)
+static unsigned short data[NUMBER_OF_DATA];
+
+int cmpNum(const void *a, const void *b);
 
 int main(void)
 {
@@ -27,10 +27,10 @@ int main(void)
 	
 	printf("qsort: ");
 	start = clock();
-	quick_sort(data, 0, NUM(data) - 1);
+	qsort(data, NUM(data), sizeof(unsigned short), cmpNum);
 	printf("%.3lfsec\n", (double)(clock() - start) / CLOCKS_PER_SEC);
 	
-	save_array("quick_sort.txt", data, NUM(data));
+	save_array("qsort.txt", data, NUM(data));
 	check_the_order(data,  NUM(data));
 	
 	return 0;
@@ -38,8 +38,17 @@ int main(void)
 
 int cmpNum(const void *a, const void *b)
 {
-	if(*(unsigned short *)a > *(unsigned short *)b) return 1;
+	int		ret;
 	
+	if(*(unsigned short *)a > *(unsigned short *)b) {
+		ret = 1;
+	} else if(*(unsigned short *)a < *(unsigned short *)b) {
+		ret = -1;
+	} else {
+		ret = 0;
+	}
+	
+	return ret;
 }
 
-//cl /Wall quick_sort.c my_lib.c
+//cl /Wall test_sort.c my_lib.c
