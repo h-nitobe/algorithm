@@ -11,8 +11,8 @@ algorithm
     1. 素数（シンプル版）　・・・・・・・・・[primes.c](primes.c)
     1. 素数（エラトステネスの篩）　・・・・・[eratosthenes.c](eratosthenes.c)
     1. 素数（エラトステネスの篩配列の無駄遣い）・・・・・[eratos.c](eratos.c)
-    1. 素数（エラトステネスの篩64ビットパック２除外）・・[eratos2.c](eratos2.c)
-    1. 素数（エラトステネスの篩64ビットパック２,3除外）・[eratos3.c](eratos3.c)
+    1. 素数（エラトステネスの篩64ビットパックx２除外）・・[eratos2.c](eratos2.c)
+    1. 素数（エラトステネスの篩64ビットパックx２,x3除外）・[eratos3.c](eratos3.c)
 
 1. 「Cプロ」総合演習別解
     1. 総合演習１別解・・・・・・・・・・・・[ex01.c](ex01.c)
