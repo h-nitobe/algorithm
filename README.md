@@ -35,4 +35,4 @@ algorithm
     1. スリープソート（ネタです）・・・・・・[sleep_sort.c](sleep_sort.c)
     1. スターリンソート（ネタです）・・・・・[stalin_sort.c](stalin_sort.c)
     1. 疑わしいソート　・・・・・・・・・・・[I-cant-t-believe-can-sort](https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md)
-    1. 標準ライブラリの qsort を使う・・・・[test_qsort.c](test_qsort.c)
+    1. 標準ライブラリの qsort を使う・・・・・[test_qsort.c](test_qsort.c)
