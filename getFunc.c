@@ -24,8 +24,8 @@
 //		 99  98  \0 *\n*  Y   Y
 //		100  99   ?  \0  \0  \0
 //
-//	Stream    ?   ?   ?  \n   Z
-//	          ?   ?   ?      \n
+//  Stream    ?   ?   ?  \n   Z
+//            ?   ?   ?      \n
 //
 
 #include	<stdio.h>
