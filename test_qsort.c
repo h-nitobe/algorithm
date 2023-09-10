@@ -38,17 +38,7 @@ int main(void)
 
 int cmpNum(const void *a, const void *b)
 {
-	int		ret;
-	
-	if(*(unsigned short *)a > *(unsigned short *)b) {
-		ret = 1;
-	} else if(*(unsigned short *)a < *(unsigned short *)b) {
-		ret = -1;
-	} else {
-		ret = 0;
-	}
-	
-	return ret;
+	return *(unsigned short *)a - *(unsigned short *)b;
 }
 
 //cl /Wall test_sort.c my_lib.c
