@@ -26,7 +26,7 @@ algorithm
     1. 追加総合演習１別解・・・・・・・・・・[wc.c](wc.c)
     1. 追加総合演習２別解・・・・・・・・・・[hd.c](hd.c)
 
-1. いろいろなソート
+1. いろいろなソート                        [my_lib.c](my_lib.c) [my_lib.h](my_lib.h)
     1. 挿入ソート　・・・・・・・・・・・・・[insertion_sort.c](insertion_sort.c)
     1. 選択ソート　・・・・・・・・・・・・・[selection_sort.c](selection_sort.c)
     1. 交換ソート（バブルソート）・・・・・・[bubble_sort.c](bubble_sort.c)
