@@ -36,11 +36,21 @@ void check_the_order(unsigned short *pa, int n)
 
 void swap(unsigned short *x, unsigned short *y)
 {
-	if (x != y) {
-		*x ^= *y;
+#if 1
+	unsigned short	tmp;
+	
+	if (x != y && *x != *y) {
+		tmp = *x;
+		*x = *y;
+		*y = tmp;
+	}
+#else				// 却下
+	if (x != y) {	// 同一のポインタの場合 0 となってしまう
+		*x ^= *y;	// トリッキーではあるが効率は良くない
 		*y ^= *x;
 		*x ^= *y;
 	}
+#endif
 }
 
 void save_array(char *fn, unsigned short *pa, int n)
