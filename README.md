@@ -39,3 +39,6 @@ algorithm
     1. スターリンソート（ネタです）・・・・・[stalin_sort.c](stalin_sort.c)
     1. 疑わしいソート　・・・・・・・・・・・[I-cant-t-believe-can-sort](https://github.com/h-nitobe/I-cant-t-believe-can-sort/blob/main/README.md)
     1. 標準ライブラリの qsort を使う・・・・・[test_qsort.c](test_qsort.c)
+1. カプレカー定数
+    1. ３桁カプレカー定数　495 ・・・・・・・[kaprekar3.c](kaprekar3.c)
+    1. ４桁カプレカー定数 6174 ・・・・・・・[kaprekar4.c](kaprekar4.c)
