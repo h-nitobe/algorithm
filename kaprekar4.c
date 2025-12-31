@@ -1,4 +1,4 @@
-//  Kaprekar's constant 2
+//  Kaprekar's constant 4
 
 #include	<stdio.h>
 #include	<stdlib.h>
